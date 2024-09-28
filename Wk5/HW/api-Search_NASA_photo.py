@@ -64,8 +64,9 @@ if data_json['collection']['metadata']['total_hits'] == 0:
 	exit()
 
 total_hits = data_json['collection']['metadata']['total_hits']
-print("\n\n-------------")
+print("\n-------------")
 print("Total images found: " + str(total_hits))
+print("\n-------------")
 
 # Display the FIRST 5 NASA Photos matching the search criteria
 firstImages = min(5, total_hits)
@@ -75,7 +76,7 @@ else:
 	print("Displaying all images found.")
  
 for i in range(0, min(firstImages, total_hits)):
-	print("\n\n-------------")
+	print("\n-------------")
 	print("Opening image " + str(i+1) + " from search...")
 	image_url=data_json['collection']['items'][i]['links'][0]['href']
 	#print(image_url)
