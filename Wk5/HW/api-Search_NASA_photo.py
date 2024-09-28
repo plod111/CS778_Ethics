@@ -25,8 +25,16 @@ print("Enter the (limited) search terms for the NASA image database.")
 print("\n-------------")
 
 
-# use the NASA API image database
-url = "https://images-api.nasa.gov/search?&media_type=image" #q=apollo%2011&description=moon%20landing&media_type=image&location=National%20Mall&keywords=engine" #?api_key=Xztecw5EiPHCXhWTdft9YpHd0p49nl4WaAdwpAhc"
+# use the NASA API image database (IMAGES ONLY)
+url = "https://images-api.nasa.gov/search?&media_type=image" 
+
+# API documentation: https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
+
+# API key is not required for this API
+# Personal API key: api_key=Xztecw5EiPHCXhWTdft9YpHd0p49nl4WaAdwpAhc
+
+#==============================================================================
+# Ask the user for search terms
 
 #text_search = input("Enter the FREE-TEXT search term(s) for the NASA image database: ")
 #url += "&q=" + text_search
